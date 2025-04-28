@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header className="bg-gradient-bg bg-no-repeat flex items-start py-6">
             <nav className="w-[90%]  mx-auto flex justify-between items-center text-custom-white">
-                {/* Logo Section */}
+           
                 <div className=" flex items-center space-x-4">
 
                     <svg width="251" height="50" viewBox="0 0 251 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +18,7 @@ const Header = () => {
 
                 </div>
 
-                {/* Navigation Links */}
+           
                 <ul className="flex space-x-6 ">
                     <li><a href="/" className="hover:underline">Home</a></li>
                     <li><a href="/about" className="hover:underline">About Us</a></li>
@@ -48,7 +48,7 @@ const Header = () => {
                 </ul>
 
 
-                {/* CTA Button */}
+            
                 <a href="/register" className="bg-white text-btn text-secondary px-4 py-2 rounded-rounded-corners font-semibold hover:bg-gray-200">
                 Get Started
                 </a>

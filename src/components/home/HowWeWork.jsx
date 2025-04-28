@@ -31,13 +31,13 @@ const HowWeWork = () => {
                     {
                         workData.content.map((content) => (
                             <div key={content.id} className=' p-4 flex flex-col  gap-3'>
-                                {/* Circle */}
+                         
                                 <span className='w-12 h-12 flex items-center justify-center border-2 border-secondary rounded-full text-custom-black text-h2'>
                                     {content.id}
                                 </span>
-                                {/* Line */}
+                               
                                 <div className='w-full h-1 bg-secondary'></div>
-                                {/* Text */}
+                             
                                 <p className='w-[260px]  text-p1 text-primary text-wrap'>{content.text}</p>
                             </div>
                         ))

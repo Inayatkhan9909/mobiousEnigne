@@ -21,19 +21,17 @@ const ClientReview = () => {
     return (
         <section className="py-12 ">
             <div className="w-[70%] mx-auto ">
-                {/* Section Title */}
                 <h2 className="text-2xl font-bold text-primary mb-8">
                     {clientReviewData.title}
                 </h2>
 
-                {/* Reviews Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {clientReviewData.reviews.map((review, index) => (
                         <div
                             key={index}
                             className="bg-primary rounded-rounded-corners border-[1px] border-primary shadow-lg  flex flex-col justify-between "
                         >
-                            {/* Video Play Button */}
+                      
                             <div className="flex justify-center items-center bg-custom-white text-custom-white h-[210px] py-6 rounded-rounded-corners">
                                 <button
                                     className="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-custom-white"
@@ -55,13 +53,11 @@ const ClientReview = () => {
                                 </button>
                             </div>
 
-                            {/* Review Text */}
                             <div className="bg-primary flex flex-col justify-end items-end gap-3 text-custom-white p-4 rounded-b-2xl">
                                 <p className="text-p2">
                                     {review.text}
                                 </p>
 
-                                {/* Arrow Button */}
                                 <button
                                     className=" w-10 h-10 text-p1  bg-custom-white text-primary hover:text-custom-white hover:bg-secondary rounded-full flex justify-center items-center shadow-lg"
                                 >

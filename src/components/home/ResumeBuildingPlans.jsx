@@ -40,7 +40,7 @@ const ResumeBuildingPlans = () => {
                 <p className='text-p2'>Let’s talk about where you’re headed — and how your resume can get you there.Schedule a call to get started.</p>
 
               </div>
-                {/* Pricing Plans */}
+         
                 <div className="w-[70%] m-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                     {plans.slice(0, 2).map((plan, index) => (
                         <div

@@ -60,7 +60,6 @@ const JobServicePlans = () => {
                     Job Application Service Plans
                 </h1>
 
-                {/* Pricing Plans */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {plans.slice(0, 3).map((plan, index) => (
                         <div
@@ -114,7 +113,7 @@ const JobServicePlans = () => {
                     ))}
                 </div>
 
-                {/* Bottom Advance Plan */}
+           
                 <div className="mt-12 bg-primary text-custom-white rounded-rounded-corners shadow-lg p-6 py-10">
 
                     <div className="flex justify-between items-center">
@@ -155,10 +154,7 @@ const JobServicePlans = () => {
                             ))}
                         </ul>
 
-
                         <GetStarted bgColor="bg-custom-white" textColor="text-primary" />
-
-
                     </div>
                 </div>
             </div>

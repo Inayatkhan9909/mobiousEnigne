@@ -56,19 +56,16 @@ const ChooseUs = () => {
   return (
     <section className="py-12 ">
     <div className="w-[70%] mx-auto ">
-        {/* Section Title */}
         <h2 className="text-2xl font-bold text-primary mb-8">
             {chooseUsData.title}
         </h2>
 
-        {/* Reviews Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {chooseUsData.content.map((content, index) => (
                 <div
                     key={index}
                     className="rounded-rounded-corners border-[1px] text-primary border-primary shadow-lg  flex flex-col justify-between "
                 >
-                    {/* Video Play Button */}
                     <div className="flex flex-col gap-6 bg-custom-white  p-6 rounded-rounded-corners">
                          <span>{content.icon}</span>
                          <p className="text-p1">
