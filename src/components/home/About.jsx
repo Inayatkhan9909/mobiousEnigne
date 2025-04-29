@@ -29,17 +29,17 @@ const About = () => {
     }
     return (
         <section className='bg-about-bg bg-no text-custom-white text-p2 font-dm-sans p-10'>
-            <div className='w-[60%] m-auto flex flex-col gap-6 '>
+            <div className='md:w-[60%] w-[90%] m-auto flex flex-col gap-6 '>
                 <h1 className='text-h3'>{aboutData.title}</h1>
 
                 <div className='flex flex-col justify-center items-center gap-10'>
                     {
                         aboutData.content.map((content)=>(
                         
-                            <div className='flex gap-14  items-center'>
+                            <div className='flex md:flex-nowrap flex-wrap md:gap-14 gap-8  items-center'>
                             
                             <div className='relative'>
-                                <div className='w-40 h-40 pt-4 px-4 rounded-full bg-custom-white overflow-hidden'>
+                                <div className='md:w-40 md:h-40 w-28 h-28 pt-4 px-4 rounded-full bg-custom-white overflow-hidden'>
                                     <img 
                                         src={content.image} 
                                         alt={content.about.split(' ')[0]} 
@@ -54,10 +54,9 @@ const About = () => {
                                         className='w-6 h-6'
                                     />
                                 </span>
-                            </div>
-                        
+                            </div>  
                            
-                            <div className=''>
+                            <div className='overflow-hidden '>
                                 <p className='whitespace-pre-wrap'>{content.about}</p>
                             </div>
                         </div>

@@ -641,6 +641,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-1 {
   height: 0.25rem;
 }
@@ -687,6 +691,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-28 {
+  height: 7rem;
 }
 
 .min-h-screen {
@@ -753,6 +761,10 @@ video {
   width: 100%;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -779,6 +791,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 .items-start {
@@ -1057,6 +1073,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -1226,7 +1247,27 @@ video {
   text-decoration-line: underline;
 }
 
+@media (min-width: 640px) {
+  .sm\:text-h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:h-40 {
+    height: 10rem;
+  }
+
+  .md\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .md\:w-40 {
+    width: 10rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1234,9 +1275,47 @@ video {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .md\:gap-14 {
+    gap: 3.5rem;
+  }
+
+  .md\:text-h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  .md\:text-h1 {
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .md\:text-\[50px\] {
+    font-size: 50px;
+  }
+
+  .md\:text-h3 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -1245,7 +1324,21 @@ video {
     width: 33.333333%;
   }
 
+  .lg\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .lg\:text-h1 {
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 600;
   }
 }

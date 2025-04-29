@@ -5,10 +5,10 @@ import { RxArrowBottomLeft } from "react-icons/rx";
 
 const HeroComponent = () => {
     return (
-        <section className="w-2/3 h-screen m-auto flex justify-center items-center text-custom-white bg-transparent">
-            <div className="flex justify-center items-center ">
+        <section className="lg:w-2/3 w-[90%] h-screen m-auto flex  justify-center items-center text-custom-white bg-transparent">
+            <div className="flex justify-center items-center md:flex-nowrap flex-wrap-reverse gap-4 py-5">
                 <div className="">
-                    <h1 className="text-h1 font-sora">
+                    <h1 className="md:text-h1 text-h2  font-sora">
                         Land job interviews <span className="text-secondary">10x</span> faster
                     </h1>
                     <h2 className="text-p1 font-dm-sans">

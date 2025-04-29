@@ -19,8 +19,8 @@ const Footer = () => {
 
                     <div className="h-[2px]  bg-custom-grey mb-6"></div>
                 </div>
-                <div className=' flex justify-between items-center'>
-                    <div className="flex justify-between gap-8 my-8">
+                <div className='flex flex-wrap lg:flex-nowrap justify-between items-center'>
+                    <div className="flex  lg:flex-nowrap flex-wrap items-center gap-8 my-8">
                         <div className="w-1/3 flex flex-col">
                             <h3 className="text-p1">Address</h3>
                             <p className='text-p2 text-wrap'>5757 Mission St Ste 103 #4450 San Francisco, CA 94103</p>
