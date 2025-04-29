@@ -4,8 +4,8 @@ import { FaLinkedinIn } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className="bg-white text-primary p-8 mt-16 flex flex-col gap-6">
-            <div className="w-[90%] m-auto mt-10">
+        <footer className="bg-white text-primary  mt-16 flex flex-col gap-6">
+            <div className="w-[90%] p-8 m-auto mt-10">
                 <div className="w-1/3 flex flex-col gap-6">
 
                     <div className="mb-6">
